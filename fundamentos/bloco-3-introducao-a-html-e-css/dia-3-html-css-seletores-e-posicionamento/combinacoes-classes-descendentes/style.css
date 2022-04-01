@@ -1,0 +1,60 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-last-of-type(2n) {
+    color: green;
+}
+
+ol li:nth-last-of-type(2n+1) {
+    text-transform: uppercase;
+}
+
+.header {
+    color: red;
+}
+
+.header em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: 700;
+}
+
+.program li:nth-of-type(-n+3) {
+    color: blue;
+}
+
+.program span {
+    background-color: pink;
+}
+
+a {
+    text-decoration: none;
+}
+
+.helper li a[href*="stackoverflow"]:hover {
+    color: orange;
+}
+
+.helper li a[href*="w3schools"]:hover {
+    color: green;
+}
+
+.helper li a[href*="https://developer.mozilla.org/pt-BR/"]:hover {
+    color: black;
+}
+
+.helper li a[href*="devdocs"]:hover {
+    color: yellow;
+}
+
+.helper li a[href*="trybe"]:hover {
+    color: green;
+}
