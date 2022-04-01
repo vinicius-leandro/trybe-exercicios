@@ -1,0 +1,64 @@
+.exercicio1 {
+    text-align: center;
+}
+
+ol li:hover {
+    background-color: red;
+}
+
+ol li:active {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+div:hover {
+    border: 3px solid black;
+}
+
+div:nth-last-of-type(5) {
+    background-color: red;
+}
+
+div:nth-last-of-type(4) {
+    background-color: green;
+}
+
+div:nth-last-of-type(3) {
+    background-color: orangered;
+}
+
+div:nth-last-of-type(2) {
+    background-color: aqua;
+}
+
+div:nth-last-of-type(1) {
+    background-color: darkblue;
+}
+
+div:nth-of-type(1) h3 {
+    color: darkblue;
+}
+
+div:nth-of-type(2) h3 {
+    color: aqua;
+}
+
+div:nth-of-type(3) h3 {
+    color: orange;
+    padding: 20px;
+}
+
+div:nth-of-type(4) h3 {
+    color: green;
+}
+
+div:nth-of-type(5) h3 {
+    color: red;
+}
+
+div:nth-last-of-type(2n+1) {
+    font-style: italic;
+}
