@@ -1,0 +1,34 @@
+body {
+    background-color: darkgrey;
+}
+
+.classificacao, th, td {
+    border: 1px solid black;
+}
+
+main {
+    display: inline-block;
+    max-width: 80%;
+}
+
+aside {
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    right: 0px;
+    border: 1px solid black;
+    padding-left: 1px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.mantisforte,.mantisolho {
+    width: 400px;
+}
+
+footer{
+    text-align: center;
+}
