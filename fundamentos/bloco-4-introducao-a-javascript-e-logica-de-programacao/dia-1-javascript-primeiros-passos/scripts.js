@@ -101,6 +101,17 @@ if(nota >= 90 && nota <=100) {
     console.log('Nota invalida');
 }*/
 
+/* 8-
+const n1 = 8;
+const n2 = 10;
+const n3 = 5;
+
+if(n1 % 2 == 0 || n2 % 2 == 0 || n3 % 2 == 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}*/
+
 const n1 = 8;
 const n2 = 10;
 const n3 = 5;
