@@ -82,6 +82,7 @@ switch(peçaxadrez.toLowerCase()) {
         console.log('Peça inválida!');
 }*/
 
+/* 7-
 let nota = 89;
 
 if(nota >= 90 && nota <=100) {
@@ -98,5 +99,14 @@ if(nota >= 90 && nota <=100) {
     console.log('F');
 } else {
     console.log('Nota invalida');
-}
+}*/
 
+const n1 = 8;
+const n2 = 10;
+const n3 = 5;
+
+if(!n1 % 2 == 0 || !n2 % 2 == 0 || !n3 % 2 == 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
