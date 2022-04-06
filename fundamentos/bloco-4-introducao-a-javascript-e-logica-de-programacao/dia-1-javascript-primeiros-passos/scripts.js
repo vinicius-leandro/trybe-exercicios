@@ -29,7 +29,7 @@ if(n1 > n2 && n1 > n3) {
     console.log(n3);
 }*/
 
-const valor = 0;
+/*const valor = 0;
 
 if(valor > 0) {
     console.log('Positive');
@@ -37,4 +37,16 @@ if(valor > 0) {
     console.log('Negative');
 }else {
     console.log('zero');
+}*/
+
+const a1 = 0;
+const a2 = 0;
+const a3 = 180;
+
+if(a1 < 0 || a2 < 0 || a3 < 0) {
+    console.log('Erro, angulo inválido');
+} else if(a1 + a2 + a3 == 180) {
+    console.log(true);
+} else {
+    console.log(false);
 }
