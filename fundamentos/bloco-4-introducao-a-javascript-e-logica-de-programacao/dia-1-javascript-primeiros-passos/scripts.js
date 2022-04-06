@@ -123,6 +123,7 @@ if(!n1 % 2 == 0 || !n2 % 2 == 0 || !n3 % 2 == 0) {
     console.log(false);
 }*/
 
+/* 10-
 const vp = 500;
 const vv = 1000;
 let vi = null;
@@ -139,4 +140,16 @@ vtc = vp + vi;
 
 lucro = (vv - vtc) * 1000;
 
-console.log(lucro);
+console.log(lucro);*/
+
+/* 11- 
+const salarioBruto = 3000;
+let salarioLiquido = null;
+let inss = null;
+let impostoDeRenda = null;
+
+inss = salarioBruto / 100 * 11;
+salarioLiquido = salarioBruto - inss;
+impostoDeRenda = (salarioLiquido / 100 * 7.5) - 142.80;
+salarioLiquido = salarioLiquido - impostoDeRenda;
+console.log(salarioLiquido);*/
