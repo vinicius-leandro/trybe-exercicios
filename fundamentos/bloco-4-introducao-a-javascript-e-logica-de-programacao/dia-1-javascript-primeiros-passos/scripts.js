@@ -112,6 +112,7 @@ if(n1 % 2 == 0 || n2 % 2 == 0 || n3 % 2 == 0) {
     console.log(false);
 }*/
 
+/* 9-
 const n1 = 8;
 const n2 = 10;
 const n3 = 5;
@@ -120,4 +121,22 @@ if(!n1 % 2 == 0 || !n2 % 2 == 0 || !n3 % 2 == 0) {
     console.log(true);
 } else {
     console.log(false);
+}*/
+
+const vp = 500;
+const vv = 1000;
+let vi = null;
+let vtc = null;
+let lucro = null;
+
+if(vp <= 0 || vv <= 0) {
+    throw new Error('Erro, valores não podem ser menores que 0');
 }
+
+vi = (vp / 100 * 20);
+
+vtc = vp + vi;
+
+lucro = (vv - vtc) * 1000;
+
+console.log(lucro);
