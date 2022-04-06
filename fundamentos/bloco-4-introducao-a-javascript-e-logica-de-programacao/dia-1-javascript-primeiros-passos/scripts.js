@@ -29,3 +29,12 @@ if(n1 > n2 && n1 > n3) {
     console.log(n3);
 }*/
 
+const valor = 0;
+
+if(valor > 0) {
+    console.log('Positive');
+}else if(valor < 0) {
+    console.log('Negative');
+}else {
+    console.log('zero');
+}
