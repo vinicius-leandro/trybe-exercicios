@@ -1,4 +1,5 @@
-/*const a = 10;
+/* 1-
+const a = 10;
 const b= 5;
 
 console.log(a + b);
@@ -7,7 +8,8 @@ console.log(a * b);
 console.log(a / b);
 console.log(a % b);*/
 
-/*const n1 = 5;
+/* 2-
+const n1 = 5;
 const n2 = 7;
 
 if(n1 > n2) {
@@ -17,7 +19,8 @@ else {
     console.log(n2);
 }*/
 
-/*const n1 = 21;
+/* 3-
+const n1 = 21;
 const n2 = 19;
 const n3 = 11;
 
@@ -29,7 +32,8 @@ if(n1 > n2 && n1 > n3) {
     console.log(n3);
 }*/
 
-/*const valor = 0;
+/* 4-
+const valor = 0;
 
 if(valor > 0) {
     console.log('Positive');
@@ -39,6 +43,7 @@ if(valor > 0) {
     console.log('zero');
 }*/
 
+/* 5-
 const a1 = 0;
 const a2 = 0;
 const a3 = 180;
@@ -49,4 +54,30 @@ if(a1 < 0 || a2 < 0 || a3 < 0) {
     console.log(true);
 } else {
     console.log(false);
+}*/
+
+let peçaxadrez = 'peao';
+
+switch(peçaxadrez.toLowerCase()) {
+    case 'rei':
+        console.log('Todas as direções, somente uma casa por vez');
+        break;
+    case 'rainha':
+        console.log('Todas as direções, até uma casa antes de outra peça');
+        break;
+    case 'bispo':
+        console.log('Diagonal, até uma casa antes de outra peça');
+        break;
+    case 'cavalo':
+        console.log('Em L, duas casas na vertical e uma na horizontal ou vice-versa, pode pular peças');
+        break;
+    case 'torre':
+        console.log('Horizontal ou vertical, até uma casa antes de outra peça');
+        break;
+    case 'peão':
+        console.log('Apenas para frente');
+        break;
+    default:
+        console.log('Peça inválida!');
 }
+
