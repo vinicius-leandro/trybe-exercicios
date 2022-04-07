@@ -1,10 +1,14 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maior = null;
+let impar = null;
 
 for(let cont of numbers) {
-    if(cont > maior) {
-        maior = cont;
-    }
+    if(cont % 2 == 1) {
+        impar += 1;
+    } 
 }
 
-console.log(maior);
+if(impar == 0){
+    console.log('Nenhm valor impar encontrado');
+} else {
+    console.log('existem ' + impar + ' numeros ímpares');
+}
