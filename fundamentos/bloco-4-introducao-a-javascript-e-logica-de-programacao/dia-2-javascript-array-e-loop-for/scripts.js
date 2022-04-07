@@ -1,8 +1,11 @@
 let numbers = [];
+let div = null;
 
-
-for(let num = 0; num <= 25 ; num += 1) {
+for(let num = 1; num <= 25 ; num += 1) {
    numbers.push(num);
 }
 
-console.log(numbers);
+for(let cont of numbers){
+    div = cont / 2;
+    console.log(div);
+}
