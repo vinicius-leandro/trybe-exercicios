@@ -16,3 +16,26 @@ let word = 'tryber';
 for(let i = word.length - 1; i >= 0; i -= 1){
     console.log(word[i]);
 } */
+
+
+/* 3 -
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let cont = '';
+let maior = '';
+let menor = '...................................................................';
+
+for(word of array) {
+    for(letter of word){
+        cont += letter;
+    }
+    if(cont.length > maior.length) {
+        maior = cont;
+    }
+    if(cont.length < menor.length) {
+        menor = cont;
+    }
+    cont = '';
+}
+
+console.log(maior);
+console.log(menor);*/
