@@ -39,3 +39,21 @@ for(word of array) {
 
 console.log(maior);
 console.log(menor);*/
+
+/* 4 -
+let cont = null;
+let maiorprim = null;
+
+for(let index = 0; index <= 50; index += 1){
+    for(segundoIndex = 0; segundoIndex <= index; segundoIndex += 1) {
+        if(index % segundoIndex == 0) {
+            cont += 1;
+        }
+    }
+    if(cont == 2){
+        maiorprim = index;
+    }
+    cont = null;
+}
+
+console.log(maiorprim);*/
