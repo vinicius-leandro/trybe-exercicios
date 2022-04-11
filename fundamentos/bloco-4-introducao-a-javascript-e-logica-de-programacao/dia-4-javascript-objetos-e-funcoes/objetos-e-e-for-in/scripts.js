@@ -44,4 +44,4 @@ primeiroLeitor[primeiroLeitor.length] = {
     editora: 'Rocco',
 }
 
-//console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + primeiroLeitor['0'].titulo);
+console.log(leitor.nome + ' Tem ' + primeiroLeitor.length + ' livros favoritos.');
