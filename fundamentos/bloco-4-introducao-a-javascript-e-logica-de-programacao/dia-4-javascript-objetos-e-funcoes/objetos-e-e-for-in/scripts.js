@@ -1,3 +1,4 @@
+/*
 let info = {
     personagem: 'Margarida',
     origem: 'Pato Donald',
@@ -20,3 +21,21 @@ for (let keys in info2) {
         console.log(info[keys] + ' e ' + info2[keys]);
     }
 }
+*/
+
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+    ],
+};
+
+let primeiroLeitor = leitor.livrosFavoritos;
+
+console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + primeiroLeitor['0'].titulo);
