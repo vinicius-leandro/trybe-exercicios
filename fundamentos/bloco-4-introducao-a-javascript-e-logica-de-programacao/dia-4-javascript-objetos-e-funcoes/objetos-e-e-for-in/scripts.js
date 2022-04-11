@@ -38,4 +38,10 @@ let leitor = {
 
 let primeiroLeitor = leitor.livrosFavoritos;
 
-console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + primeiroLeitor['0'].titulo);
+primeiroLeitor[primeiroLeitor.length] = {
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editora: 'Rocco',
+}
+
+//console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + primeiroLeitor['0'].titulo);
