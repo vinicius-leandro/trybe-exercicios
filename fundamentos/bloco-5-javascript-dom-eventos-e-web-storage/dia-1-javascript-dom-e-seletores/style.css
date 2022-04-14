@@ -3,7 +3,7 @@ main, section {
     border-style: solid;
 }
 
-.title {
+#title {
     text-align: center;
 }
 
