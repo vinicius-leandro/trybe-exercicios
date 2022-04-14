@@ -38,12 +38,13 @@ for (let index = 0; index < liItems.length; index += 1) {
     thirdSection.appendChild(li);
 }
 
-let h3 = document.createElement(h3);
-let secondH3 = document.createElement(h3);
-let thirdH3 = document.createElement(h3);
+let h3 = document.createElement('h3');
+let secondH3 = document.createElement('h3');
+let thirdH3 = document.createElement('h3');
+h3.className = 'description';
+secondH3.className = 'description';
+thirdH3.className = 'description';
 main.appendChild(h3);
 main.appendChild(secondH3);
 main.appendChild(thirdH3);
 
-h1.className = 'title';
-body.appendChild(h1);
