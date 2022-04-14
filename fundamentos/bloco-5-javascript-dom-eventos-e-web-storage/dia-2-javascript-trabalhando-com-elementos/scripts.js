@@ -28,13 +28,15 @@ img.className = 'small-image';
 img.src = 'https://picsum.photos/200';
 secondSection.appendChild(img);
 
+let li = '';
 let liItems = ['um', 'dois', 'tres', 
 'quatro', 'cinco', 'seis', 'sete', 
 'oito', 'nove', 'dez'];
 let ul = document.createElement('ul');
 for (let index = 0; index < liItems.length; index += 1) {
-    let li = document.createElement('li');
+    li = document.createElement('li');
     li.innerHTML = liItems[index];
+    ul.appendChild(li)
     thirdSection.appendChild(li);
 }
 
@@ -53,3 +55,5 @@ main.removeChild(secondSection);
 thirdSection.style.marginRight = 'auto';
 
 document.querySelector('.center-content').parentElement.style.backgroundColor = 'green';
+
+thirdSection.removeChild(li).lastElementChild;
