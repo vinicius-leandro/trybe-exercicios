@@ -17,3 +17,7 @@ section.appendChild(p);
 let secondSection = document.createElement('section');
 secondSection.className = 'left-content';
 main.appendChild(secondSection);
+
+let thirdSection = document.createElement('section');
+thirdSection.className = 'right-content';
+main.appendChild(thirdSection);
