@@ -13,3 +13,7 @@ main.appendChild(section)
 
 let p = document.createElement('p');
 section.appendChild(p);
+
+let secondSection = document.createElement('section');
+secondSection.className = 'left-content';
+main.appendChild(secondSection);
