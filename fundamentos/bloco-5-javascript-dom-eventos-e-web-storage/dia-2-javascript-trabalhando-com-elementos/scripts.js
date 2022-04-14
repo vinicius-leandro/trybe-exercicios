@@ -6,3 +6,7 @@ body.appendChild(h1);
 let main = document.createElement('main');
 main.className = 'main-content'
 body.appendChild(main);
+
+let section = document.createElement('section');
+section.className = 'center-content';
+main.appendChild(section)
