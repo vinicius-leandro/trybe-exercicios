@@ -21,3 +21,8 @@ main.appendChild(secondSection);
 let thirdSection = document.createElement('section');
 thirdSection.className = 'right-content';
 main.appendChild(thirdSection);
+
+let img = document.createElement('img');
+img.className = 'small-image';
+img.src = 'https://picsum.photos/200';
+secondSection.appendChild(img);
