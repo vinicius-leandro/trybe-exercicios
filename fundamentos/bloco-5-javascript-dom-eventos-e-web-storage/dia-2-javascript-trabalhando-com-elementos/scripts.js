@@ -31,8 +31,15 @@ let liItems = ['um', 'dois', 'tres',
 'quatro', 'cinco', 'seis', 'sete', 
 'oito', 'nove', 'dez'];
 let ul = document.createElement('ul');
-for (index = 1; index < liItems.length; index += 1) {
+for (let index = 0; index < liItems.length; index += 1) {
     let li = document.createElement('li');
     li.innerHTML = liItems[index];
     thirdSection.appendChild(li);
 }
+
+let h3 = document.createElement(h3);
+let secondH3 = document.createElement(h3);
+let thirdH3 = document.createElement(h3);
+main.appendChild(h3);
+main.appendChild(secondH3);
+main.appendChild(thirdH3);
