@@ -51,3 +51,5 @@ main.appendChild(thirdH3);
 main.removeChild(secondSection);
 
 thirdSection.style.marginRight = 'auto';
+
+document.querySelector('.center-content').parentElement.style.backgroundColor = 'green';
