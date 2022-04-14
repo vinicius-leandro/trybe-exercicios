@@ -49,3 +49,5 @@ main.appendChild(secondH3);
 main.appendChild(thirdH3);
 
 main.removeChild(secondSection);
+
+thirdSection.style.marginRight = 'auto';
