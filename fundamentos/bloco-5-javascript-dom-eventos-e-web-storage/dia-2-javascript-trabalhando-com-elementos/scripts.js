@@ -1,6 +1,7 @@
 let body = document.getElementsByTagName('body')[0];
 let h1 = document.createElement('h1');
 h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+h1.className = 'title';
 body.appendChild(h1);
 
 let main = document.createElement('main');
@@ -43,3 +44,6 @@ let thirdH3 = document.createElement(h3);
 main.appendChild(h3);
 main.appendChild(secondH3);
 main.appendChild(thirdH3);
+
+h1.className = 'title';
+body.appendChild(h1);
