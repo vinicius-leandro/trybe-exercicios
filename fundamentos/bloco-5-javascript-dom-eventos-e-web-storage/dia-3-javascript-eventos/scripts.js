@@ -147,8 +147,29 @@ taskSelected()
 function colorSelected(event) {
     if (event.target.className === 'task'){
         event.target.className = 'task selected';
+        document.body.style.cursor = 'pointer';
     } else if (event.target.className === 'task selected') {
         event.target.className = 'task';
+        document.body.style.cursor = 'default';
     }
 }
 
+function colorClicked() {
+    const days = document.querySelectorAll('.day');
+    
+    for (let day of days) {
+        day.addEventListener('click', putColor);
+    }
+}
+
+colorClicked();
+
+function putColor(event) {
+    const color = document.querySelector('.my-tasks div');
+
+    if (color.className === 'task selected') {
+        event.target.style.color = color.style.backgroundColor;
+    } else if (color.className === 'task') {
+        event.target.style.color = 'rgb(119,119,119)';
+    }
+}
