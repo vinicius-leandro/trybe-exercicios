@@ -106,6 +106,9 @@ for (let li of day) {
 
 function changeZoom(event) {
     event.target.style.fontSize = '25px';
+    if (event.target.innerHTML == 'SEXTOU o/') {
+        event.target.style.fontSize = '22px';
+    }
 }
 
 function changeZoomDefault() {
@@ -132,3 +135,20 @@ function createTaskColor(color) {
 }
 
 createTaskColor('blueviolet');
+
+function taskSelected() {
+    const color = document.querySelector('.task');
+
+    color.addEventListener('click', colorSelected);
+}
+
+taskSelected()
+
+function colorSelected(event) {
+    if (event.target.className === 'task'){
+        event.target.className = 'task selected';
+    } else if (event.target.className === 'task selected') {
+        event.target.className = 'task';
+    }
+}
+
