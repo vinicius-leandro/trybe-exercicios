@@ -99,7 +99,6 @@ function changeFridayColor() {
 }
 
 const day = document.querySelectorAll('.day');
-console.log(day)
 for (let li of day) {
     li.addEventListener('mouseover', changeZoom);
     li.addEventListener('mouseleave', changeZoomDefault);
@@ -112,3 +111,13 @@ function changeZoom(event) {
 function changeZoomDefault() {
     event.target.style.fontSize = '20px';
 }
+
+function createTask(task) {
+    const span = document.createElement('span');
+    const spanDiv = document.querySelector('.my-tasks');
+
+    span.innerHTML = task;
+    spanDiv.appendChild(span);
+}
+
+createTask('Codar');
