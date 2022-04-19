@@ -97,3 +97,18 @@ function changeFridayColor() {
         }
     }
 }
+
+const day = document.querySelectorAll('.day');
+console.log(day)
+for (let li of day) {
+    li.addEventListener('mouseover', changeZoom);
+    li.addEventListener('mouseleave', changeZoomDefault);
+}
+
+function changeZoom(event) {
+    event.target.style.fontSize = '25px';
+}
+
+function changeZoomDefault() {
+    event.target.style.fontSize = '20px';
+}
