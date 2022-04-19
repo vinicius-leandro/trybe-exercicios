@@ -121,3 +121,14 @@ function createTask(task) {
 }
 
 createTask('Codar');
+
+function createTaskColor(color) {
+    const div = document.createElement('div');
+    const divDiv = document.querySelector('.my-tasks');
+
+    div.className = 'task';
+    div.style.backgroundColor = color;
+    divDiv.appendChild(div);
+}
+
+createTaskColor('blueviolet');
