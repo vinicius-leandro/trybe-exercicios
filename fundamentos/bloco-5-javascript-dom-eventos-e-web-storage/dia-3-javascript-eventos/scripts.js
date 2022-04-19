@@ -123,7 +123,7 @@ function createTask(task) {
     spanDiv.appendChild(span);
 }
 
-createTask('Codar');
+createTask('Trybe');
 
 function createTaskColor(color) {
     const div = document.createElement('div');
@@ -134,7 +134,7 @@ function createTaskColor(color) {
     divDiv.appendChild(div);
 }
 
-createTaskColor('blueviolet');
+createTaskColor('rgb(76,164,109)');
 
 function taskSelected() {
     const color = document.querySelector('.task');
@@ -171,5 +171,45 @@ function putColor(event) {
         event.target.style.color = color.style.backgroundColor;
     } else if (color.className === 'task') {
         event.target.style.color = 'rgb(119,119,119)';
+    }
+}
+
+function buttonClicked() {
+    const button = document.getElementById('btn-add');
+    
+    button.addEventListener('click', createTaskList);
+    
+}
+
+buttonClicked();
+
+function inputKey () {
+    const input = document.getElementById('task-input');
+
+    input.addEventListener('keyup', createTaskListInput);
+}
+
+inputKey();
+
+function createTaskList () {
+    const task = document.getElementById('task-input');
+    const li = document.createElement('li');
+    const liDiv = document.querySelector('.task-list');
+
+    if (task.value === '') {
+        alert ('Erro: Você não digitou nenhum compromisso.')
+    } else {
+        li.innerText = task.value;
+        liDiv.appendChild(li);
+        task.value = '';
+    }
+
+}
+
+function createTaskListInput (event) {
+    const button = document.getElementById('btn-add');
+
+    if (event.keyCode === 13) {
+        button.click();
     }
 }
