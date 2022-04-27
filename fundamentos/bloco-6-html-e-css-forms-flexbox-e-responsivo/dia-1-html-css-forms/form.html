@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <section class="page-container">
+      <header>
+        <h1>Formulário</h1>
+      </header>
+      <main>
+        <form>
+          <fieldset class="form-container">
+            <section class="form-row">
+              <label for="name"
+                >Nome:
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Digite seu nome Completo"
+                  minlength="10"
+                  maxlength="40"
+                  class="input-style"
+                />
+              </label>
+            </section>
+            <section>
+              <label for="email"
+                >Email:
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Digite seu email"
+                  minlength="10"
+                  maxlength="50"
+                  class="input-style"
+                />
+              </label>
+            </section>
+            <section>
+              <div class="radio-div">
+                <input type="radio" name="place" id="cidade" />
+                <label for="cidade">Cidade</label>
+              </div>
+              <div class="radio-div">
+                <input type="radio" name="place" id="campo" />
+                <label for="campo">Campo</label>
+              </div>
+              <div class="radio-div">
+                <input type="radio" name="place" id="praia" />
+                <label for="praia">Praia</label>
+              </div>
+              <div class="radio-div">
+                <input type="radio" name="place" id="montanha" />
+                <label for="montanha">Montanha</label>
+              </div>
+            </section>
+            <section>
+              <label for="motivo"
+                >Espaço para resposta:
+                <br />
+                <textarea
+                  name="reason"
+                  id="motivo"
+                  cols="30"
+                  rows="5"
+                  maxlength="500"
+                  placeholder="Motivo para ir para as férias"
+                ></textarea>
+              </label>
+            </section>
+            <section>
+              <label for="data"
+                >Data:
+                <input type="date" name="date" id="data" />
+              </label>
+            </section>
+            <section>
+              <div>
+                <label for="termo"
+                  >Gostaria de receber outras incríveis oportunidades oferecidas
+                  pela Trybe?
+                  <input type="checkbox" name="sendEmail" id="enviarEmail" />
+                </label>
+              </div>
+              <div>
+                <label for="termo"
+                  >Concordo que imagens das minhas férias poderão ser usadas na
+                  divulgação de concursos futuros.
+                  <input
+                    type="checkbox"
+                    name="agreeTerm"
+                    id="concordoTermo"
+                    checked
+                  />
+                </label>
+              </div>
+            </section>
+          </fieldset>
+          <section id="btn-container">
+              <button type="submit" id="enviar" class="btn-form">Enviar</button>
+              <button type="reset" id="resetar" class="btn-form">Apagar</button>
+          </section>
+        </form>
+      </main>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
