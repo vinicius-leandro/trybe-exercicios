@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 10px;
+}
+
+header h1 {
+    
+    font-weight: 500;
+}
+
+.form-container {
+    padding: 15px;
+}
+
+.input-style {
+    padding: 5px;
+    width: 40%;
+}
+
+.radio-div {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+textarea {
+    padding: 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+.btn-form {
+    padding: 5px;
+    width: 15%;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-right: 5px;
+}
+
+#btn-container {
+    padding: 10px;
+}
