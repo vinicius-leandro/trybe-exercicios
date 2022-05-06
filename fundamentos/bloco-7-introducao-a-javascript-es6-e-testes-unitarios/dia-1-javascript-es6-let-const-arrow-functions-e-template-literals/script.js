@@ -1,4 +1,4 @@
-const (testingScope) = escopo => {
+const testingScope = (escopo) => {
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
@@ -19,7 +19,7 @@ const arraySorted = (array) => array.sort((a, b) => a - b);
 
 console.log(arraySorted(oddsAndEvens));
 
-parte 2
+// parte 2
 
 let skills = ['HTML', 'CSS', 'JavaScript', 'Git', 'Github'];
 
