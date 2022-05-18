@@ -61,4 +61,11 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+const expectedResult = 43;
+
+function averageAge() {
+  const ages = books.map((book) => book.releaseYear - book.author.birthYear);
+  return ages.reduce((acc, curr) => (curr === ages[ages.length - 1] ? (acc + curr) / ages.length : acc + curr))
+}
+
+console.log(averageAge());
