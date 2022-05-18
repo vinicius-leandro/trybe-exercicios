@@ -61,4 +61,17 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+const expectedResult = [
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien',
+];
+
+function fantasyOrScienceFictionAuthors() {
+  const bookFiltred = books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+  const nameFiltred =  bookFiltred.map((book) => `${book.author.name}`);
+  return nameFiltred.sort();
+}
+
+console.log(fantasyOrScienceFictionAuthors());
