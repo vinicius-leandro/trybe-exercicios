@@ -5,5 +5,10 @@ const names = [
 ];
 
 function containsA() {
-  // escreva seu código aqui
+  return names.reduce((acc, curr) => acc + curr.split('').reduce((acumulador, letra) => {
+    if (letra === 'a' || letra === 'A') return acumulador + 1;
+    return acumulador;
+  }, 0), 0);
 }
+
+console.log(containsA())
